@@ -5,3 +5,5 @@ This repository adds sample apps for Rebar for iOS. These samples will demonstra
 Your organization can leverage these templates to build your own apps built on top of Rebar.
 
 If you would like more information on Rebar, please email more@monkton.io and we will get back to you.
+
+Please visit our website https://monkton.io for more information on Rebar and what it does.
