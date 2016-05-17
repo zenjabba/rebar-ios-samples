@@ -1,0 +1,609 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F22EF6881C0E7EC80095A15E /* AppItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22EF6871C0E7EC80095A15E /* AppItem.swift */; };
+		F22EF6A11C0E96C90095A15E /* AppItemController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22EF6A01C0E96C90095A15E /* AppItemController.swift */; };
+		F2331B731BA6404500106BD5 /* RebarAppDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2331B721BA6404500106BD5 /* RebarAppDatabase.swift */; };
+		F236A0241B9E31AC00D19A31 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F236A0231B9E31AC00D19A31 /* AppDelegate.swift */; };
+		F236A02B1B9E31AC00D19A31 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F236A02A1B9E31AC00D19A31 /* Images.xcassets */; };
+		F236A02E1B9E31AC00D19A31 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F236A02C1B9E31AC00D19A31 /* LaunchScreen.xib */; };
+		F2577D141CE4BEDF0076DCF1 /* Rebar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2577D121CE4BEDF0076DCF1 /* Rebar.framework */; };
+		F2577D151CE4BEDF0076DCF1 /* Rebar.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F2577D121CE4BEDF0076DCF1 /* Rebar.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F2577D161CE4BEDF0076DCF1 /* RebarSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2577D131CE4BEDF0076DCF1 /* RebarSupport.framework */; };
+		F2577D171CE4BEDF0076DCF1 /* RebarSupport.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F2577D131CE4BEDF0076DCF1 /* RebarSupport.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F25806B01C493FEE0008A685 /* StoredAppItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25806AF1C493FEE0008A685 /* StoredAppItem.swift */; };
+		F25AD01C1BB86D9300949E18 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F25AD01B1BB86D9300949E18 /* CoreLocation.framework */; };
+		F26CFADD1C1386A300CC9E3C /* RebarAppSyncWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26CFADC1C1386A300CC9E3C /* RebarAppSyncWrapper.swift */; };
+		F26CFAF01C13ED1B00CC9E3C /* RebarAppParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26CFAEF1C13ED1B00CC9E3C /* RebarAppParser.swift */; };
+		F277DFB61CDA85E8003CE8F3 /* cacert.pem in Resources */ = {isa = PBXBuildFile; fileRef = F277DFB51CDA85E8003CE8F3 /* cacert.pem */; };
+		F278A6281BDD2B1100619783 /* RebarAppSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F278A6271BDD2B1100619783 /* RebarAppSettingsViewController.swift */; };
+		F278A6301BDD72C100619783 /* AppAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F278A62F1BDD72C100619783 /* AppAssets.xcassets */; };
+		F278A63C1BDD950F00619783 /* UIImageExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F278A63B1BDD950F00619783 /* UIImageExtensions.swift */; };
+		F278A63E1BDD977C00619783 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F278A63D1BDD977C00619783 /* CoreGraphics.framework */; };
+		F278A6531BDE375900619783 /* RebarAppContactUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F278A6521BDE375900619783 /* RebarAppContactUsViewController.swift */; };
+		F278A65A1BDE384700619783 /* RebarAppPrivacyPolicyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F278A6591BDE384700619783 /* RebarAppPrivacyPolicyViewController.swift */; };
+		F278A65C1BDE385C00619783 /* RebarAppLegalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F278A65B1BDE385C00619783 /* RebarAppLegalViewController.swift */; };
+		F278A65E1BDE38BE00619783 /* RebarAppContactUsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F278A65D1BDE38BE00619783 /* RebarAppContactUsViewController.xib */; };
+		F278A6601BDE38F100619783 /* RebarAppPrivacyPolicyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F278A65F1BDE38F100619783 /* RebarAppPrivacyPolicyViewController.xib */; };
+		F278A6621BDE38FB00619783 /* RebarAppLegalViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F278A6611BDE38FB00619783 /* RebarAppLegalViewController.xib */; };
+		F281B4891C7E778500EAC5F7 /* StoredAppItemController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F281B4881C7E778500EAC5F7 /* StoredAppItemController.swift */; };
+		F281B4A81C80AD6E00EAC5F7 /* RebarAppSettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F281B4A71C80AD6E00EAC5F7 /* RebarAppSettingsViewController.xib */; };
+		F29D2EC41BCFDA5600A77671 /* RebarAppAppConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29D2EC31BCFDA5600A77671 /* RebarAppAppConfiguration.swift */; };
+		F2C7E4681BB71FE300FEBAE9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2C7E4671BB71FE300FEBAE9 /* Main.storyboard */; };
+		F2CB46191BCEAAA100E29B22 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F2CB46181BCEAAA100E29B22 /* Localizable.strings */; };
+		F2DE65D51C7E3C4D006C0E51 /* RebarAppMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2DE65D41C7E3C4D006C0E51 /* RebarAppMainViewController.swift */; };
+		F2DE65D71C7E3C5A006C0E51 /* RebarAppMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2DE65D61C7E3C5A006C0E51 /* RebarAppMainViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F23BBACB1CE38076006721D8 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				F2577D151CE4BEDF0076DCF1 /* Rebar.framework in Embed Frameworks */,
+				F2577D171CE4BEDF0076DCF1 /* RebarSupport.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		F22EF6871C0E7EC80095A15E /* AppItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppItem.swift; path = Business/AppItem.swift; sourceTree = "<group>"; };
+		F22EF6A01C0E96C90095A15E /* AppItemController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppItemController.swift; path = Business/AppItemController.swift; sourceTree = "<group>"; };
+		F2331B721BA6404500106BD5 /* RebarAppDatabase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RebarAppDatabase.swift; sourceTree = "<group>"; };
+		F236A01E1B9E31AC00D19A31 /* RebarApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RebarApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F236A0221B9E31AC00D19A31 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F236A0231B9E31AC00D19A31 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F236A02A1B9E31AC00D19A31 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		F236A02D1B9E31AC00D19A31 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		F2577D121CE4BEDF0076DCF1 /* Rebar.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Rebar.framework; path = ../../../Library/Frameworks/Rebar/Production/Rebar.framework; sourceTree = "<group>"; };
+		F2577D131CE4BEDF0076DCF1 /* RebarSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RebarSupport.framework; path = ../../../Library/Frameworks/Rebar/Production/RebarSupport.framework; sourceTree = "<group>"; };
+		F25806AF1C493FEE0008A685 /* StoredAppItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StoredAppItem.swift; path = Business/Schedule/StoredAppItem.swift; sourceTree = "<group>"; };
+		F25AD01B1BB86D9300949E18 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		F268D44C1C188EDD00A8BB96 /* RebarApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = RebarApp.entitlements; path = ../RebarApp.entitlements; sourceTree = "<group>"; };
+		F26CFADC1C1386A300CC9E3C /* RebarAppSyncWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RebarAppSyncWrapper.swift; path = Business/Wrappers/RebarAppSyncWrapper.swift; sourceTree = "<group>"; };
+		F26CFAEF1C13ED1B00CC9E3C /* RebarAppParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RebarAppParser.swift; path = Business/Parsers/RebarAppParser.swift; sourceTree = "<group>"; };
+		F277DFB51CDA85E8003CE8F3 /* cacert.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cacert.pem; sourceTree = SOURCE_ROOT; };
+		F278A6271BDD2B1100619783 /* RebarAppSettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RebarAppSettingsViewController.swift; path = UI/Settings/RebarAppSettingsViewController.swift; sourceTree = "<group>"; };
+		F278A62F1BDD72C100619783 /* AppAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = AppAssets.xcassets; sourceTree = "<group>"; };
+		F278A63B1BDD950F00619783 /* UIImageExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIImageExtensions.swift; path = UI/Extensions/UIImageExtensions.swift; sourceTree = "<group>"; };
+		F278A63D1BDD977C00619783 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		F278A6521BDE375900619783 /* RebarAppContactUsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RebarAppContactUsViewController.swift; sourceTree = "<group>"; };
+		F278A6591BDE384700619783 /* RebarAppPrivacyPolicyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RebarAppPrivacyPolicyViewController.swift; sourceTree = "<group>"; };
+		F278A65B1BDE385C00619783 /* RebarAppLegalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RebarAppLegalViewController.swift; sourceTree = "<group>"; };
+		F278A65D1BDE38BE00619783 /* RebarAppContactUsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RebarAppContactUsViewController.xib; sourceTree = "<group>"; };
+		F278A65F1BDE38F100619783 /* RebarAppPrivacyPolicyViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RebarAppPrivacyPolicyViewController.xib; sourceTree = "<group>"; };
+		F278A6611BDE38FB00619783 /* RebarAppLegalViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RebarAppLegalViewController.xib; sourceTree = "<group>"; };
+		F281B4881C7E778500EAC5F7 /* StoredAppItemController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StoredAppItemController.swift; path = Business/Schedule/StoredAppItemController.swift; sourceTree = "<group>"; };
+		F281B4A71C80AD6E00EAC5F7 /* RebarAppSettingsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = RebarAppSettingsViewController.xib; path = Business/Settings/RebarAppSettingsViewController.xib; sourceTree = "<group>"; };
+		F28D65B11C52A47200242310 /* app-config.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "app-config.json"; sourceTree = "<group>"; };
+		F28D65B31C52A47200242310 /* app-config.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "app-config.json"; sourceTree = "<group>"; };
+		F28D65B51C52A47200242310 /* app-config.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "app-config.json"; sourceTree = "<group>"; };
+		F29D2EC31BCFDA5600A77671 /* RebarAppAppConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RebarAppAppConfiguration.swift; path = Business/RebarAppAppConfiguration.swift; sourceTree = "<group>"; };
+		F2C7E4671BB71FE300FEBAE9 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		F2CB46181BCEAAA100E29B22 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = Localizable.strings; path = "Supporting FIles/Localizable.strings"; sourceTree = "<group>"; };
+		F2DE65D41C7E3C4D006C0E51 /* RebarAppMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RebarAppMainViewController.swift; path = UI/Schedules/RebarAppMainViewController.swift; sourceTree = "<group>"; };
+		F2DE65D61C7E3C5A006C0E51 /* RebarAppMainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = RebarAppMainViewController.xib; path = UI/Schedules/RebarAppMainViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F236A01B1B9E31AC00D19A31 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2577D141CE4BEDF0076DCF1 /* Rebar.framework in Frameworks */,
+				F278A63E1BDD977C00619783 /* CoreGraphics.framework in Frameworks */,
+				F25AD01C1BB86D9300949E18 /* CoreLocation.framework in Frameworks */,
+				F2577D161CE4BEDF0076DCF1 /* RebarSupport.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F236A0151B9E31AC00D19A31 = {
+			isa = PBXGroup;
+			children = (
+				F277DFB51CDA85E8003CE8F3 /* cacert.pem */,
+				F28D65AF1C52A47200242310 /* config */,
+				F252973A1BDA7C7E000501C8 /* Frameworks */,
+				F236A0201B9E31AC00D19A31 /* Project Files */,
+				F236A01F1B9E31AC00D19A31 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F236A01F1B9E31AC00D19A31 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F236A01E1B9E31AC00D19A31 /* RebarApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F236A0201B9E31AC00D19A31 /* Project Files */ = {
+			isa = PBXGroup;
+			children = (
+				F2577D181CE4C83C0076DCF1 /* Core */,
+				F29D2EC21BCFDA4200A77671 /* Business */,
+				F29D2EBF1BCFD9E000A77671 /* UI */,
+				F236A0211B9E31AC00D19A31 /* Supporting Files */,
+			);
+			name = "Project Files";
+			path = projectfiles;
+			sourceTree = "<group>";
+		};
+		F236A0211B9E31AC00D19A31 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F268D44C1C188EDD00A8BB96 /* RebarApp.entitlements */,
+				F278A62F1BDD72C100619783 /* AppAssets.xcassets */,
+				F236A02A1B9E31AC00D19A31 /* Images.xcassets */,
+				F236A02C1B9E31AC00D19A31 /* LaunchScreen.xib */,
+				F2C7E4671BB71FE300FEBAE9 /* Main.storyboard */,
+				F236A0221B9E31AC00D19A31 /* Info.plist */,
+				F2CB46181BCEAAA100E29B22 /* Localizable.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F252973A1BDA7C7E000501C8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F2577D121CE4BEDF0076DCF1 /* Rebar.framework */,
+				F2577D131CE4BEDF0076DCF1 /* RebarSupport.framework */,
+				F278A63D1BDD977C00619783 /* CoreGraphics.framework */,
+				F25AD01B1BB86D9300949E18 /* CoreLocation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F2577D181CE4C83C0076DCF1 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				F236A0231B9E31AC00D19A31 /* AppDelegate.swift */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		F25806AE1C493FBF0008A685 /* Schedule */ = {
+			isa = PBXGroup;
+			children = (
+				F25806AF1C493FEE0008A685 /* StoredAppItem.swift */,
+				F281B4881C7E778500EAC5F7 /* StoredAppItemController.swift */,
+			);
+			name = Schedule;
+			sourceTree = "<group>";
+		};
+		F26CFADB1C13868B00CC9E3C /* Wrappers */ = {
+			isa = PBXGroup;
+			children = (
+				F26CFADC1C1386A300CC9E3C /* RebarAppSyncWrapper.swift */,
+			);
+			name = Wrappers;
+			sourceTree = "<group>";
+		};
+		F26CFAEE1C13ED0C00CC9E3C /* Parsers */ = {
+			isa = PBXGroup;
+			children = (
+				F26CFAEF1C13ED1B00CC9E3C /* RebarAppParser.swift */,
+			);
+			name = Parsers;
+			sourceTree = "<group>";
+		};
+		F278A6261BDD2AFB00619783 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				F278A6511BDE375900619783 /* Extra */,
+				F278A6271BDD2B1100619783 /* RebarAppSettingsViewController.swift */,
+				F281B4A71C80AD6E00EAC5F7 /* RebarAppSettingsViewController.xib */,
+			);
+			name = Settings;
+			sourceTree = "<group>";
+		};
+		F278A63A1BDD94FC00619783 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F278A63B1BDD950F00619783 /* UIImageExtensions.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		F278A6511BDE375900619783 /* Extra */ = {
+			isa = PBXGroup;
+			children = (
+				F278A6521BDE375900619783 /* RebarAppContactUsViewController.swift */,
+				F278A65D1BDE38BE00619783 /* RebarAppContactUsViewController.xib */,
+				F278A6591BDE384700619783 /* RebarAppPrivacyPolicyViewController.swift */,
+				F278A65F1BDE38F100619783 /* RebarAppPrivacyPolicyViewController.xib */,
+				F278A65B1BDE385C00619783 /* RebarAppLegalViewController.swift */,
+				F278A6611BDE38FB00619783 /* RebarAppLegalViewController.xib */,
+			);
+			name = Extra;
+			path = UI/Settings/Extra;
+			sourceTree = "<group>";
+		};
+		F28D65AF1C52A47200242310 /* config */ = {
+			isa = PBXGroup;
+			children = (
+				F28D65B01C52A47200242310 /* development */,
+				F28D65B21C52A47200242310 /* production */,
+				F28D65B41C52A47200242310 /* test */,
+			);
+			path = config;
+			sourceTree = "<group>";
+		};
+		F28D65B01C52A47200242310 /* development */ = {
+			isa = PBXGroup;
+			children = (
+				F28D65B11C52A47200242310 /* app-config.json */,
+			);
+			path = development;
+			sourceTree = "<group>";
+		};
+		F28D65B21C52A47200242310 /* production */ = {
+			isa = PBXGroup;
+			children = (
+				F28D65B31C52A47200242310 /* app-config.json */,
+			);
+			path = production;
+			sourceTree = "<group>";
+		};
+		F28D65B41C52A47200242310 /* test */ = {
+			isa = PBXGroup;
+			children = (
+				F28D65B51C52A47200242310 /* app-config.json */,
+			);
+			path = test;
+			sourceTree = "<group>";
+		};
+		F29D2EBF1BCFD9E000A77671 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				F2DE65D31C7E3AD8006C0E51 /* Main */,
+				F278A63A1BDD94FC00619783 /* Extensions */,
+				F278A6261BDD2AFB00619783 /* Settings */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		F29D2EC21BCFDA4200A77671 /* Business */ = {
+			isa = PBXGroup;
+			children = (
+				F25806AE1C493FBF0008A685 /* Schedule */,
+				F26CFAEE1C13ED0C00CC9E3C /* Parsers */,
+				F26CFADB1C13868B00CC9E3C /* Wrappers */,
+				F29D2EC31BCFDA5600A77671 /* RebarAppAppConfiguration.swift */,
+				F2331B721BA6404500106BD5 /* RebarAppDatabase.swift */,
+				F22EF6871C0E7EC80095A15E /* AppItem.swift */,
+				F22EF6A01C0E96C90095A15E /* AppItemController.swift */,
+			);
+			name = Business;
+			sourceTree = "<group>";
+		};
+		F2DE65D31C7E3AD8006C0E51 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				F2DE65D41C7E3C4D006C0E51 /* RebarAppMainViewController.swift */,
+				F2DE65D61C7E3C5A006C0E51 /* RebarAppMainViewController.xib */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F236A01D1B9E31AC00D19A31 /* RebarApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F236A03D1B9E31AC00D19A31 /* Build configuration list for PBXNativeTarget "RebarApp" */;
+			buildPhases = (
+				F236A01A1B9E31AC00D19A31 /* Sources */,
+				F236A01B1B9E31AC00D19A31 /* Frameworks */,
+				F236A01C1B9E31AC00D19A31 /* Resources */,
+				F28D65A71C52A35600242310 /* ShellScript */,
+				F23BBACB1CE38076006721D8 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RebarApp;
+			productName = Rebar.Sample;
+			productReference = F236A01E1B9E31AC00D19A31 /* RebarApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F236A0161B9E31AC00D19A31 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = SSchedule;
+				LastSwiftMigration = 0700;
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Monkton, LLC";
+				TargetAttributes = {
+					F236A01D1B9E31AC00D19A31 = {
+						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = MQX3Z46ABT;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.DataProtection = {
+								enabled = 1;
+							};
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+							com.apple.SafariKeychain = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = F236A0191B9E31AC00D19A31 /* Build configuration list for PBXProject "Rebar-Template" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F236A0151B9E31AC00D19A31;
+			productRefGroup = F236A01F1B9E31AC00D19A31 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F236A01D1B9E31AC00D19A31 /* RebarApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F236A01C1B9E31AC00D19A31 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2C7E4681BB71FE300FEBAE9 /* Main.storyboard in Resources */,
+				F281B4A81C80AD6E00EAC5F7 /* RebarAppSettingsViewController.xib in Resources */,
+				F278A6601BDE38F100619783 /* RebarAppPrivacyPolicyViewController.xib in Resources */,
+				F2CB46191BCEAAA100E29B22 /* Localizable.strings in Resources */,
+				F236A02E1B9E31AC00D19A31 /* LaunchScreen.xib in Resources */,
+				F278A6621BDE38FB00619783 /* RebarAppLegalViewController.xib in Resources */,
+				F278A65E1BDE38BE00619783 /* RebarAppContactUsViewController.xib in Resources */,
+				F277DFB61CDA85E8003CE8F3 /* cacert.pem in Resources */,
+				F278A6301BDD72C100619783 /* AppAssets.xcassets in Resources */,
+				F2DE65D71C7E3C5A006C0E51 /* RebarAppMainViewController.xib in Resources */,
+				F236A02B1B9E31AC00D19A31 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		F28D65A71C52A35600242310 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [ \"${CONFIGURATION}\" == \"Debug\" ]; then\ncp -r \"${PROJECT_DIR}/config/development/app-config.json\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.app\"\nfi\nif [ \"${CONFIGURATION}\" == \"Test\" ]; then\ncp -r \"${PROJECT_DIR}/config/test/app-config.json\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.app\"\nfi\nif [ \"${CONFIGURATION}\" == \"Release\" ]; then\ncp -r \"${PROJECT_DIR}/config/production/app-config.json\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.app\"\nfi";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F236A01A1B9E31AC00D19A31 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F278A65A1BDE384700619783 /* RebarAppPrivacyPolicyViewController.swift in Sources */,
+				F281B4891C7E778500EAC5F7 /* StoredAppItemController.swift in Sources */,
+				F25806B01C493FEE0008A685 /* StoredAppItem.swift in Sources */,
+				F29D2EC41BCFDA5600A77671 /* RebarAppAppConfiguration.swift in Sources */,
+				F22EF6881C0E7EC80095A15E /* AppItem.swift in Sources */,
+				F278A65C1BDE385C00619783 /* RebarAppLegalViewController.swift in Sources */,
+				F22EF6A11C0E96C90095A15E /* AppItemController.swift in Sources */,
+				F2DE65D51C7E3C4D006C0E51 /* RebarAppMainViewController.swift in Sources */,
+				F2331B731BA6404500106BD5 /* RebarAppDatabase.swift in Sources */,
+				F26CFADD1C1386A300CC9E3C /* RebarAppSyncWrapper.swift in Sources */,
+				F278A6281BDD2B1100619783 /* RebarAppSettingsViewController.swift in Sources */,
+				F278A63C1BDD950F00619783 /* UIImageExtensions.swift in Sources */,
+				F236A0241B9E31AC00D19A31 /* AppDelegate.swift in Sources */,
+				F26CFAF01C13ED1B00CC9E3C /* RebarAppParser.swift in Sources */,
+				F278A6531BDE375900619783 /* RebarAppContactUsViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F236A02C1B9E31AC00D19A31 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F236A02D1B9E31AC00D19A31 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F236A03B1B9E31AC00D19A31 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MACH_O_TYPE = mh_execute;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F236A03C1B9E31AC00D19A31 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MACH_O_TYPE = mh_execute;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F236A03E1B9E31AC00D19A31 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = RebarApp.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/Frameworks/Rebar/Development",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/projectfiles/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = io.monkton.rebarapp;
+				PRODUCT_NAME = RebarApp;
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		F236A03F1B9E31AC00D19A31 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = RebarApp.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/Frameworks/Rebar/Production",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/projectfiles/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = io.monkton.rebarapp;
+				PRODUCT_NAME = RebarApp;
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F236A0191B9E31AC00D19A31 /* Build configuration list for PBXProject "Rebar-Template" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F236A03B1B9E31AC00D19A31 /* Debug */,
+				F236A03C1B9E31AC00D19A31 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F236A03D1B9E31AC00D19A31 /* Build configuration list for PBXNativeTarget "RebarApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F236A03E1B9E31AC00D19A31 /* Debug */,
+				F236A03F1B9E31AC00D19A31 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F236A0161B9E31AC00D19A31 /* Project object */;
+}

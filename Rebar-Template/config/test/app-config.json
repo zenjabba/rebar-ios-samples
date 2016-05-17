@@ -1,0 +1,16 @@
+{
+	"api-url": "https://api.example.com/v1",
+	"pinned-ssl": [""],
+	"keychain-storage-type": "AccessibleAfterFirstUnlockThisDeviceOnly",
+	"keychain-access-group": "your-app-identifier",
+	"fips": true,
+	"default-color": "#00aaea",
+	
+	"welcome-screen": null,
+    "main-screen": null,
+	"app-logo": null,
+	
+	"account-authentication-type":"credentials",
+	"create-account-options": null,
+	"scheme": "rebarapp"
+}
