@@ -65,8 +65,8 @@
 		F236A0231B9E31AC00D19A31 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F236A02A1B9E31AC00D19A31 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		F236A02D1B9E31AC00D19A31 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		F2577D121CE4BEDF0076DCF1 /* Rebar.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Rebar.framework; path = ../../../Library/Frameworks/Rebar/Production/Rebar.framework; sourceTree = "<group>"; };
-		F2577D131CE4BEDF0076DCF1 /* RebarSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RebarSupport.framework; path = ../../../Library/Frameworks/Rebar/Production/RebarSupport.framework; sourceTree = "<group>"; };
+		F2577D121CE4BEDF0076DCF1 /* Rebar.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Rebar.framework; path = /Library/Frameworks/Rebar/Production/Rebar.framework; sourceTree = "<group>"; };
+		F2577D131CE4BEDF0076DCF1 /* RebarSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RebarSupport.framework; path = /Library/Frameworks/Rebar/Production/RebarSupport.framework; sourceTree = "<group>"; };
 		F25806AF1C493FEE0008A685 /* StoredAppItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StoredAppItem.swift; path = Business/Schedule/StoredAppItem.swift; sourceTree = "<group>"; };
 		F25AD01B1BB86D9300949E18 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		F268D44C1C188EDD00A8BB96 /* RebarApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = RebarApp.entitlements; path = ../RebarApp.entitlements; sourceTree = "<group>"; };
