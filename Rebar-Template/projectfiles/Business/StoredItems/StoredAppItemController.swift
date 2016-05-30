@@ -26,6 +26,10 @@ import RebarSupport
 
 class StoredAppItemController : AppItemController<StoredAppItem> {
 	
+	override func getDatabase() -> FMDatabaseQueue? {
+		return RebarDatabaseManager.getInstance()?.getDatabase(RebarAppDatabase);
+	}
+	
 	override private init() {
 		// No one should instantiate these classes but us
 	}
@@ -127,7 +131,7 @@ class StoredAppItemController : AppItemController<StoredAppItem> {
 		
 		var items: [StoredAppItem]? = nil;
 		
-		RebarDatabaseManager.getInstance()?.getDefaultDatabase()?.inDatabase({ (database: FMDatabase!) -> Void in
+		getDatabase()?.inDatabase({ (database: FMDatabase!) -> Void in
 			items = RebarDatabase.executeQuery(query, database: database, reader: {(reader: FMResultSet) -> AnyObject in
 				return self.read(reader)!;
 			});
@@ -147,7 +151,7 @@ class StoredAppItemController : AppItemController<StoredAppItem> {
 	/// Retrieves a single item
 	override func get(refId: String!) -> StoredAppItem? {
 		var item: StoredAppItem?;
-		RebarDatabaseManager.getInstance()?.getDefaultDatabase()?.inDatabase({ (database: FMDatabase!) -> Void in
+		getDatabase()?.inDatabase({ (database: FMDatabase!) -> Void in
 			let itemId = self.getItemId(refId, database: database);
 			item = self.get(itemId, database: database);
 		});
@@ -165,7 +169,7 @@ class StoredAppItemController : AppItemController<StoredAppItem> {
 	/// Retrieves a single item
 	override func get(itemId: Int) -> StoredAppItem? {
 		var item: StoredAppItem?;
-		RebarDatabaseManager.getInstance()?.getDefaultDatabase()?.inDatabase({ (database: FMDatabase!) -> Void in
+		getDatabase()?.inDatabase({ (database: FMDatabase!) -> Void in
 			item = self.get(itemId, database: database);
 		});
 		return item;

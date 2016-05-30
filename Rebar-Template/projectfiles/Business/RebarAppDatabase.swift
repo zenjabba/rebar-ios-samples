@@ -25,6 +25,13 @@ import Rebar
 
 class RebarAppDatabase : RebarDatabase {
 	
+	/// The name of the database
+	override func databaseName(isEncrypted: Bool) -> String! {
+		if (isEncrypted) {
+			return "demo-app.enc.sqlite";
+		}
+		return "demo-app.sqlite";
+	}
 	
 	static let APP_NAME: String = "RebarAppDatabase";
 	

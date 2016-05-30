@@ -26,6 +26,10 @@ import Rebar
 
 class AppItemController<T: AppItem> {
 	
+	func getDatabase() -> FMDatabaseQueue? {
+		preconditionFailure("You must define a database");
+	}
+	
 	/**
 	* Parses and stores raw data from the service
 	*/
@@ -38,7 +42,7 @@ class AppItemController<T: AppItem> {
 	*/
 	func store(items: [T]) {
 		
-		RebarDatabaseManager.getInstance()?.getDefaultDatabase()?.inDatabase({ (database: FMDatabase!) -> Void in
+		getDatabase()?.inDatabase({ (database: FMDatabase!) -> Void in
 			for item in items {
 				self.sync(item, database: database);
 			}

@@ -29,15 +29,14 @@ import RebarSupport
 @UIApplicationMain
 class AppDelegate : RebarAppDelegate {
 	
-	override func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+	/// Configure the app mandatory configuration items
+	override func configureApp() {
 		
 		// Set the configuration
 		RebarAppController.getInstance()!.setConfiguration(RebarAppAppConfiguration());
-		RebarDatabaseManager.getInstance()!.register(RebarAppDatabase);
-		RebarDatabaseManager.getInstance()!.setDefault(RebarAppDatabase);
 		
-		// Override point for customization after application launch.
-		return super.application(application, didFinishLaunchingWithOptions: launchOptions);
+		// Set our internal database...
+		RebarDatabaseManager.getInstance()!.register(RebarAppDatabase);
 		
 	}
 	

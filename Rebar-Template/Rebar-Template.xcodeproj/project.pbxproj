@@ -166,13 +166,13 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		F25806AE1C493FBF0008A685 /* StoredItem */ = {
+		F25806AE1C493FBF0008A685 /* StoredItems */ = {
 			isa = PBXGroup;
 			children = (
 				F241584B1CF92FE400E072B1 /* StoredAppItem.swift */,
 				F241584C1CF92FE400E072B1 /* StoredAppItemController.swift */,
 			);
-			name = StoredItem;
+			name = StoredItems;
 			sourceTree = "<group>";
 		};
 		F26CFADB1C13868B00CC9E3C /* Wrappers */ = {
@@ -270,7 +270,7 @@
 		F29D2EC21BCFDA4200A77671 /* Business */ = {
 			isa = PBXGroup;
 			children = (
-				F25806AE1C493FBF0008A685 /* StoredItem */,
+				F25806AE1C493FBF0008A685 /* StoredItems */,
 				F26CFAEE1C13ED0C00CC9E3C /* Parsers */,
 				F26CFADB1C13868B00CC9E3C /* Wrappers */,
 				F29D2EC31BCFDA5600A77671 /* RebarAppAppConfiguration.swift */,
