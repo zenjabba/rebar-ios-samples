@@ -21,22 +21,16 @@
 /// SOFTWARE.
 ///
 
-import UIKit
-import Rebar
+import Foundation
 
-class RebarAppLegalViewController : RebarCoreViewController {
-	
-	// Load me
-	required init() {
-		super.init(nibName: "RebarAppLegalViewController", bundle: NSBundle(forClass: self.dynamicType));
-		
-	}
-	
-	
-	required init(coder aDecoder: NSCoder) {
-		super.init(coder: aDecoder);
-		
-		
-	}
-	
+class RebarAppSettingAction {
+    
+    var title: String? = nil;
+    var action: () -> () = { () in };
+    
+    init(title: String!, action: ()->()) {
+        self.title = title;
+        self.action = action;
+    }
+    
 }
