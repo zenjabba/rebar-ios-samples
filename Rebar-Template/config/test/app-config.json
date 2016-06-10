@@ -1,16 +1,16 @@
 {
-	"api-url": "https://api.example.com/v1",
-	"pinned-ssl": [""],
-	"keychain-storage-type": "AccessibleAfterFirstUnlockThisDeviceOnly",
-	"keychain-access-group": "your-app-identifier",
-	"fips": true,
-	"default-color": "#00aaea",
+	"rebar.api.url": "https://api.example.com/v1",
+	"rebar.tls.pinned": [""],
+	"rebar.keychain.type": "AccessibleAfterFirstUnlockThisDeviceOnly",
+	"rebar.keychain.group": "your-app-identifier",
+	"rebar.fips": true,
+	"rebar.color": "#00aaea",
 	
-	"welcome-screen": null,
-    "main-screen": null,
-	"app-logo": null,
+	"rebar.screen.welcome": null,
+    "rebar.screen.main": null,
+	"rebar.app.logo": null,
 	
-	"account-authentication-type":"credentials",
-	"create-account-options": null,
-	"scheme": "rebarapp"
+	"rebar.auth":"credentials",
+	"rebar.account.create": null,
+	"rebar.scheme": "rebarapp"
 }
