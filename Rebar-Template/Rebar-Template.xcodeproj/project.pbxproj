@@ -87,8 +87,8 @@
 		F2C29E311CFE2A0F00E62C6D /* app-legal.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "app-legal.json"; sourceTree = "<group>"; };
 		F2C7E4671BB71FE300FEBAE9 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = "Supporting FIles/Main.storyboard"; sourceTree = "<group>"; };
 		F2CB46181BCEAAA100E29B22 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = Localizable.strings; path = "Supporting FIles/Localizable.strings"; sourceTree = "<group>"; };
-		F2DE65D41C7E3C4D006C0E51 /* RebarAppMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RebarAppMainViewController.swift; path = UI/Schedules/RebarAppMainViewController.swift; sourceTree = "<group>"; };
-		F2DE65D61C7E3C5A006C0E51 /* RebarAppMainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = RebarAppMainViewController.xib; path = UI/Schedules/RebarAppMainViewController.xib; sourceTree = "<group>"; };
+		F2DE65D41C7E3C4D006C0E51 /* RebarAppMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RebarAppMainViewController.swift; path = UI/Main/RebarAppMainViewController.swift; sourceTree = "<group>"; };
+		F2DE65D61C7E3C5A006C0E51 /* RebarAppMainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = RebarAppMainViewController.xib; path = UI/Main/RebarAppMainViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */

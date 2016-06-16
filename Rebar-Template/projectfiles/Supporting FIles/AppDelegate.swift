@@ -33,10 +33,10 @@ class AppDelegate : RebarAppDelegate {
 	override func configureApp() {
 		
 		// Set the configuration
-		RebarAppController.getInstance()!.setConfiguration(RebarAppAppConfiguration());
+		RebarAppController.getInstance().setConfiguration(RebarAppAppConfiguration());
 		
 		// Set our internal database...
-		RebarDatabaseManager.getInstance()!.register(RebarAppDatabase);
+		RebarDatabaseManager.getInstance().register(RebarAppDatabase);
 		
 	}
 	
