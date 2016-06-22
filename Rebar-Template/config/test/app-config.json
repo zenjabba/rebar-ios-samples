@@ -12,5 +12,5 @@
 	
 	"rebar.auth":"credentials",
 	"rebar.account.create": null,
-	"rebar.scheme": "rebarapp"
+	"rebar.scheme": "rebarapp-scheme"
 }
