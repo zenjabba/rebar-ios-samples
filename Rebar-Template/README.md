@@ -12,6 +12,7 @@ Setup will prompt for:
 * Bundle Identifier: The identifer used within the app
 * Bundle Prefix: The prefix used by the app, found in the developer portal
 * API Url: The API Endpoint of your application, eg: https://api.example.com/v1
+* URL Scheme: The URL Scheme for the app to be opened by other apps
 
 After running this script, the bulk of the setup is now done. Developers may need to chose the provisioning profile. 
 
