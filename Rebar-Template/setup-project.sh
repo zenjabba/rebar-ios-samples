@@ -16,10 +16,10 @@ echo "Please enter bundle prefix: (From Developer Portal) "
 read prefix_identifier
 
 # Update the configuration files
-find . -name '*.json' -print0 | xargs -0 sed -i "" "s/your-app-identifier/$prefix_identifier.apps/g"
+find . -name '*.json' -print0 | xargs -0 sed -i "" "s/your-app-identifier/$prefix_identifier/g"
 
 # Update the entitlements for the prefix
-find . -name '*.entitlements' -print0 | xargs -0 sed -i "" "s/your-app-identifier/$prefix_identifier.apps/g"
+find . -name '*.entitlements' -print0 | xargs -0 sed -i "" "s/your-app-identifier/$prefix_identifier/g"
 
 
 
