@@ -18,4 +18,4 @@ After running this script, the bulk of the setup is now done. Developers may nee
 
 ## Runtime Error
 
-If the script will not run, permissions may need to be modified `chmod 777 setup-project.sh`
+If the script will not run, permissions may need to be modified `chmod +x setup-project.sh`
