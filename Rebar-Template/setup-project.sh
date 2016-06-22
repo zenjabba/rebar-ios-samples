@@ -32,3 +32,11 @@ read url_identifier
 find . -name '*.json' -print0 | xargs -0 sed -i "" "s#https://api.example.com/v1#$url_identifier#g"
 
 
+
+
+# Add the API URL
+echo "Please enter URL scheme: "
+read url_scheme
+
+# Update the configuration files
+find . -name '*.json' -print0 | xargs -0 sed -i "" "s#rebarapp-scheme#$url_scheme#g"
